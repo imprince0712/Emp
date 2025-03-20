@@ -17,6 +17,7 @@ namespace Server.Controllers
                 return BadRequest("Model Is Empty");
             }
             var result = await accountInteface.CreateAsync(user);
+            // tested for pull request merging
             return Ok(result);
         }
 
